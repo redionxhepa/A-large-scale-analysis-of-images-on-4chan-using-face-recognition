@@ -1,5 +1,7 @@
 # Image-Based-Meme-Creation-and-Evolution
 
+### Dependencies and libriaries to be installed
+
 
 
 
@@ -16,6 +18,13 @@ The input can be of two formats. Either you give the full path of the encodings/
 python dbscan.py --distancesCalculated --inputPath --outputFolder --epsilon --minSamples
 ```
 Check the source code inside the file to see the default values.
+
+
+
+### Visualization
+
+
+### Annotation
 
 
 
