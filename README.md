@@ -17,12 +17,16 @@ The input can be of two formats. Either you give the full path of the encodings/
 ```
 python dbscan.py --distancesCalculated --inputPath --outputFolder --epsilon --minSamples
 ```
-Check the source code inside the file to see the default values.
+Explanations to be added for each parameter.
 
 
 
 ### Visualization
 
+```
+python visualize.py  --output --labels --imagesPath
+```
+Explanations to be added for each parameter.
 
 ### Annotation
 
