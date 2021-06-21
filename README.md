@@ -9,6 +9,15 @@
 ## How to run the pipeline
 
 
+## Read the entities
+
+
+```
+python readTheEntities.py --input --output
+```
+Explanations to be added for each parameter.
+
+
 
 ### Run the DB-SCAN clustering algorithm
 
