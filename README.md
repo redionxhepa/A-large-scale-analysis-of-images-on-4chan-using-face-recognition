@@ -33,6 +33,7 @@ scipy==1.5.4 <br/>
 six==1.15.0 <br/>
 threadpoolctl==2.1.0 <br/>
 tifffile==2020.9.3  <br/>
+tqdm==4.61.1 <br/>
 urllib3==1.26.4 <br/>
 Wikidata==0.7.0 <br/>
 
