@@ -4,6 +4,11 @@
 
 The following libraries were used to perform the experiments. The versions do not have to be exactly but we are showing them to be consistent.
 
+For installing the face_recognition API please have a look at the Github repository of this API.
+
+<https://github.com/ageitgey/face_recognition>
+
+
 
 certifi==2020.12.5 <br/>
 chardet==4.0.0 <br/>
