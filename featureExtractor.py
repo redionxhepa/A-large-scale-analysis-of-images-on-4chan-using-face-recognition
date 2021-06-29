@@ -21,6 +21,13 @@ from numpyencoder import NumpyEncoder
 # facerecognition related libraries and functions 	  
 from face_recognition.api import  _raw_face_landmarks
 from face_recognition.api import  _raw_face_locations
+
+try:
+    import face_recognition_models
+except Exception:
+    print("Please install `face_recognition_models` with this command before using `face_recognition`:\n")
+    print("pip install git+https://github.com/ageitgey/face_recognition_models")
+    quit()
 #print("Please install `face_recognition_models` with this command before using `face_recognition`:\n")
 #print("pip install git+https://github.com/ageitgey/face_recognition_models")  #to do write a try and catch exception to automate the process
 
