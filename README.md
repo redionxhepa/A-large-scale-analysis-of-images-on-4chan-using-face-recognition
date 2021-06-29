@@ -53,6 +53,18 @@ python readTheEntities.py --input --output
 Explanations to be added for each parameter.
 
 
+## Feature Extractor
+
+This script processes all the images in a folder and then saves the encodings in a ndjson file.
+
+
+``` 
+  python featureExtractor.py --imagesFolderPath --ndjsonFolderPath --workers --epsilon --jitter 
+```
+
+By now you need only to give the full path of the images and the script will output the encodings of the images in a ndjson file. All the parameters have default value but for sure one needs to input the path of the folder where the images are located at. By now this code will output the encodings of the first 10 images. The code of the multiprocessing part is the last part which is commented out.
+
+
 
 ### Run the DB-SCAN clustering algorithm
 
