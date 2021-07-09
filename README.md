@@ -64,10 +64,10 @@ This script processes all the images in a folder and then saves the encodings in
 
 
 ``` 
-  python featureExtractor.py --imagesFolderPath --ndjsonFolderPath --workers --epsilon --jitter 
+  python featureExtractorParallelized.py --imagesFolderPath --ndjsonFolderPath --workers --epsilon --jitter --jsonFile
 ```
 
-By now you need only to give the full path of the images and the script will output the encodings of the images in a ndjson file. All the parameters have default value but for sure one needs to input the path of the folder where the images are located at. By now this code will output the encodings of the first 10 images. The code of the multiprocessing part is the last part which is commented out.
+By now you need only to give the full path of the images and the script will output the encodings of the images in a ndjson file. All the parameters have default value but for sure one needs to input the path of the folder where the images are located at. One example of a file that the CNN ('cnn' in the code) fails to run in my local machine is the image of "Duncan Jones". 
 
 
 
