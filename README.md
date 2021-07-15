@@ -58,16 +58,28 @@ python readTheEntities.py --input --output
 Explanations to be added for each parameter.
 
 
+
+## Text file creator
+
+This scripts take the path of a directory and saves all the the paths of the images found in all the subdirectories. One can decide where to store the paths (it creates by default a new folder). Also one can decide into how many different .txt files you want to store the image paths.
+
+
+``` 
+  filePathTextFileCreator.py --imagesFolderPath --txtFolderPath --parts
+```
+
+The parts variable will take care the fact of how many .txt you want to save your output. Please be careful when you rerun this script because it might overwrite the old files (.txt file) so it is better to simply delete the previous output or simply give a new path for the folder where to store these .txt file. The txtFolderPath is the full path of the folder where to store the .txt file. If it does not exist the script will simply create a new folder with the given name in the local path where the filePathTextFileCreator.py is.
+
 ## Feature Extractor
 
 This script processes all the images in a folder and then saves the encodings in a ndjson file.
 
 
 ``` 
-  python featureExtractorParallelized.py --imagesFolderPath --ndjsonFolderPath --workers --epsilon --jitter --jsonFile
+  python featureExtractorParallelized.py --imagesTextFile --ndjsonFolderPath --workers --epsilon --jitter --jsonFile
 ```
 
-By now you need only to give the full path of the images and the script will output the encodings of the images in a ndjson file. All the parameters have default value but for sure one needs to input the path of the folder where the images are located at. One example of a file that the CNN ('cnn' in the code) fails to run in my local machine is the image of "Duncan Jones". 
+By now you need only to give the full path of the images (as a text file) and the script will output the encodings of the images in a ndjson file. All the parameters have default value but for sure one needs to input the path of the text file which containts the paths of the images.
 
 
 
