@@ -68,7 +68,7 @@ This scripts take the path of a directory and saves all the the paths of the ima
   filePathTextFileCreator.py --imagesFolderPath --txtFolderPath --parts
 ```
 
-The parts variable will take care the fact of how many .txt you want to save your output. Please be careful when you rerun this script because it might overwrite the old files (.txt file) so it is better to simply delete the previous output or simply give a new path for the folder where to store these .txt file. The txtFolderPath is the full path of the folder where to store the .txt file. If it does not exist the script will simply create a new folder with the given name in the local path where the filePathTextFileCreator.py is.
+The _parts_ variable will take care the fact of how many .txt you want to save your output. Please be careful when you rerun this script because it might overwrite the old files (.txt file) so it is better to simply delete the previous output or simply give a new path for the folder where to store these .txt file. The _txtFolderPath_ is the full path of the folder where to store the .txt file. If it does not exist the script will simply create a new folder with the given name in the local path where the _filePathTextFileCreator.py_ is.
 
 ## Feature Extractor
 
