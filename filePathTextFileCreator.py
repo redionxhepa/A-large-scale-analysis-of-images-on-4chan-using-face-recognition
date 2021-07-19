@@ -33,7 +33,7 @@ if not CHECK_FOLDER:
 else:
     print(MYDIR, "folder already exists.")
 
-blockLength = math.floor(len(file_names) / parts)
+blockLength = math.ceil(len(file_names) / parts)
 print("Block length is: " +str(blockLength))
 
 k = 0
