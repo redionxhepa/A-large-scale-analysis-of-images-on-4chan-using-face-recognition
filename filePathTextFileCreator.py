@@ -33,7 +33,7 @@ if not CHECK_FOLDER:
 else:
     print(MYDIR, "folder already exists.")
 
-blockLength = math.floor(len(files) / parts)
+blockLength = math.floor(len(file_names) / parts)
 print("Block length is: " +str(blockLength))
 
 k = 0
@@ -43,7 +43,7 @@ for i in range(0, parts):
             f.write(file_names[k])
             f.write('\n')
             k = k + 1
-            if (k >= len(files) or k % blockLength == 0):
+            if (k >= len(file_names) or k % blockLength == 0):
                 break
 print("Creation of text files is done")
 
