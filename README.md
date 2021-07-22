@@ -76,7 +76,7 @@ This script processes all the images in a folder and then saves the encodings in
 
 
 ``` 
-  python featureExtractorParallelized.py --imagesTextFile --ndjsonFolderPath --workers --epsilon --jitter --jsonFile
+  python featureExtractorChanged.py  --imagesTextFile --ndjsonFolderPath --workers --epsilon --jitter --jsonFile
 ```
 
 By now you need only to give the full path of the images (as a text file) and the script will output the encodings of the images in a ndjson file. All the parameters have default value but for sure one needs to input the path of the text file which containts the paths of the images.
