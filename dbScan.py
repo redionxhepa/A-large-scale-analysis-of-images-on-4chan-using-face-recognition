@@ -15,43 +15,28 @@ def check_or_create_folder(folder_path):
        print(MYDIR, "folder already exists.")
 
 
-
-
-
-
 #read the parsed argument
 parser = OptionParser()
-parser.add_option("-d","--distancesCalculated ",dest='distancesCalculated',help="boolean that shows whether distances are calculated beforehand",default=False)
-parser.add_option("-i", "--inputPath", dest='input', help=" Full path of the file containing the encodings/distances",default=None)
+parser.add_option("-i", "--inputPath", dest='input', help=" Full path of the file containing the encodings",default=None)
 parser.add_option("-o", "--outputFolder", dest='outputFolder', default='',help="Full path of the folder where the output text file of the clustering will be stored ")
 parser.add_option("-e", "--epsilon", dest='epsilon', default=0.45,help="epsilon parameter of the DB-Scan")
 parser.add_option("-m", "--minSamples", dest='minimum_samples', default=3,help="minimum samples parameter of DBSCAN")
+parser.add_option("-j", "--jobs", dest='jobs', default=3,help="number of jobs to be run in parallell")
 (options, arguments) = parser.parse_args()
 
-distancesCalculated = options.distancesCalculated
 inputPath = options.input
 outputFolder = options.outputFolder
 epsilon= options.epsilon
 minimum_samples= options.minimum_samples
+jobs=options.jobs
 
-
-#check if the distances are precalculated
-
-if(distancesCalculated):
- data = np.load(inputPath)  #check if  squeeze/unsqueeze is needed
- clustering = DBSCAN(eps=epsilon, min_samples=minimum_samples,metric='precomputed').fit(data)
-else:
-# it means that the input is  an econding file
-  # it expects to have a .npy file path
-  data = np.load(inputPath).squeeze(1)
-  clustering = DBSCAN(eps=epsilon, min_samples=minimum_samples).fit(data)
+#  a .npy file is expected
+data = np.load(inputPath).squeeze(1)
+clustering = DBSCAN(eps=epsilon, min_samples=minimum_samples,n_jobs=int(jobs)).fit(data)
 
 
 different_labels=[]
-print(len(clustering.labels_))
-counter=0
 for label in clustering.labels_:
-    counter=counter+1
     if label not in different_labels:
          different_labels.append(label)
 print("Clusters number")
