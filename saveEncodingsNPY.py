@@ -60,7 +60,7 @@ for ndjsonFile in  ndjsonFiles:
               paths.append(current_path)
               counter_one_face +=1
               print(ndjsonFile)
-              break
+              
            
 print("Reading the Ndjson file/s is done")
 print("In total " +str(general_counter)+" images were processed")
