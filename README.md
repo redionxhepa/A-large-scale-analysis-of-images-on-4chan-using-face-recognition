@@ -85,12 +85,28 @@ By now you need only to give the full path of the images (as a text file) and th
 
 ### Run the DB-SCAN clustering algorithm
 
-The input can be of two formats. Either you give the full path of the encodings/feature vectors stacked as a matrix or you give the precalculated distances.
+In order to perform the DB-SCAN clustering algorithm one needs to run the dbscan.py script. But before that one needs to input the encodings as a .npy format. For this thing one should firstly run the saveEncodingsNPY.py to generate the relevant ".npy file".
+
+
 
 ```
-python dbscan.py --distancesCalculated --inputPath --outputFolder --epsilon --minSamples
+python saveEncodingsNPY.py --ndjsonFiles --npyFile --txtFile
 ```
-Explanations to be added for each parameter.
+In the ndjsonFiles option one should the list of the paths of the ndjson file in a comma seperated fashion. The npyFile option is the folder where the .npy file is stored and the txtFile option is the folder where the paths of the images are stored.
+
+An example case would be the following :
+```
+python  saveEncodingsNPY.py --ndjsonFiles /data/face-recognition/faces_paths_0.txt.ndjson,/data/face-recognition/faces_paths_1.txt.ndjson --txtFile /home/redion/redion_files --npyFile /home/redion/redion_files
+```
+
+saveEncodingsNPY.py reads through the ndsjon files,checks which encoding has size 1 (contains 1 image) and stores it in the .npy file. The relevant path  is stored in the .txt file.
+
+
+```
+python dbscan.py --inputPath --outputFolder --epsilon --minSamples --jobs
+```
+
+Inputpath option is the full path of the .npy file that was stored in the previous script. Epsion and minnimum samples are the parameters of DBSCAN. OutputFolder option is the folder where you want to store the result of the clustering. Jobs option is the number of parallell workers.
 
 
 
