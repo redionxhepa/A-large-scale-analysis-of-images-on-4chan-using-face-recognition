@@ -103,7 +103,7 @@ python  saveEncodingsNPY.py --ndjsonFiles /data/face-recognition/faces_paths_0.t
 After that you are read to run the DB-SCAN clustering script.
 
 ```
-python dbscan.py --inputPath --outputFolder --epsilon --minSamples --jobs
+python dbScan.py --inputPath --outputFolder --epsilon --minSamples --jobs
 ```
 
 --inputPath option is the full path of the .npy file that was stored in the previous script. --epsilon and --minSamples are the parameters of DBSCAN. --outputFolder option is the folder where you want to store the result of the clustering (as a .txt file). --jobs option is the number of parallell workers. In order to work 
