@@ -85,7 +85,8 @@ By now you need only to give the full path of the images (as a text file) and th
 
 ### Run the DB-SCAN clustering algorithm
 
-In order to perform the DB-SCAN clustering algorithm one needs to run the dbscan.py script. But before that one needs to input the encodings as a .npy format. For this thing one should firstly run the saveEncodingsNPY.py to generate the relevant ".npy file".
+In order to perform the DB-SCAN clustering algorithm one needs to run the dbscan.py script. But before that one needs to input the encodings as a .npy format. For this thing one should firstly run the saveEncodingsNPY.py to generate the relevant ".npy file". saveEncodingsNPY.py reads through the ndsjon files,checks which encoding has size 1 (contains 1 image) and stores it in the .npy file. The relevant path  is stored in the .txt file.
+
 
 
 
@@ -99,8 +100,7 @@ An example case would be the following :
 python  saveEncodingsNPY.py --ndjsonFiles /data/face-recognition/faces_paths_0.txt.ndjson,/data/face-recognition/faces_paths_1.txt.ndjson --txtFile /home/redion/redion_files --npyFile /home/redion/redion_files
 ```
 
-saveEncodingsNPY.py reads through the ndsjon files,checks which encoding has size 1 (contains 1 image) and stores it in the .npy file. The relevant path  is stored in the .txt file.
-
+After that you are read to run the DB-SCAN clustering script.
 
 ```
 python dbscan.py --inputPath --outputFolder --epsilon --minSamples --jobs
