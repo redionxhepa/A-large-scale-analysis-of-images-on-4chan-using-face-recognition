@@ -92,7 +92,7 @@ In order to perform the DB-SCAN clustering algorithm one needs to run the dbscan
 ```
 python saveEncodingsNPY.py --ndjsonFiles --npyFile --txtFile
 ```
-In the ndjsonFiles option one should the list of the paths of the ndjson file in a comma seperated fashion. The npyFile option is the folder where the .npy file is stored and the txtFile option is the folder where the paths of the images are stored.
+In the --ndjsonFiles option one should the list of the paths of the ndjson file in a comma seperated fashion. The --npyFile option is the folder where the .npy file is stored and the --txtFile option is the folder where the paths of the images are stored.
 
 An example case would be the following :
 ```
@@ -106,7 +106,7 @@ saveEncodingsNPY.py reads through the ndsjon files,checks which encoding has siz
 python dbscan.py --inputPath --outputFolder --epsilon --minSamples --jobs
 ```
 
-Inputpath option is the full path of the .npy file that was stored in the previous script. Epsion and minnimum samples are the parameters of DBSCAN. OutputFolder option is the folder where you want to store the result of the clustering. Jobs option is the number of parallell workers.
+--inputPath option is the full path of the .npy file that was stored in the previous script. --epsilon and --minSamples are the parameters of DBSCAN. OutputFolder option is the folder where you want to store the result of the clustering. --jobs option is the number of parallell workers.
 
 
 
