@@ -1,4 +1,4 @@
-# Image-Based-Meme-Creation-and-Evolution
+# A large-scale analysis of images on 4chan using face recognition
 
 ### Dependencies and libriaries to be installed
 
