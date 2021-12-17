@@ -182,6 +182,22 @@ First we create the relevant train and test dataset. This is done by the followi
 python  createTestTrainData.py 
 ```
 
+After the custom dataset is created the pretrained Resnet-18 is finetuned on this dataset.
+
+```
+python  resnet18Classifier.py 
+```
+
+The best performing model is chosen and then the two following scripts can be used for inference and checking the performance of the ResNet-18 classifier
+in custom dataset
+
+```
+python  inferenceResnet.py
+```
+
+```
+python cartoonClassifiersStatistics.py
+```
 
 ## Cluster statistics 
 
