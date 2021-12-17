@@ -55,7 +55,7 @@ Wikidata==0.7.0 <br/>
 ```
 python readTheEntities.py --input --output
 ```
-Explanations to be added for each parameter.
+In the scripts the explanations are added for each parameter.
 
 
 
