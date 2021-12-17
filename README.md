@@ -140,7 +140,7 @@ a text file containing the labels of the that particular image. "imagePath" para
 
 
 
-## Miscallaneous scripts
+# Miscallaneous scripts
 
 The below scripts are used mainly for calculating the md5 hashes, finetuning the Human Face vs Cartoon classifier or create the statistics of the clusters. The following new libraries are also needed.
 
@@ -165,3 +165,12 @@ torch==1.10.0 <br/>
 torchvision==0.11.1 <br/>
 tqdm==4.62.3 <br/>
 typing-extensions==3.10.0.2 <br/>
+
+
+
+## Human Face vs Cartoon Classifier
+
+
+## Cluster statistics 
+
+## Toxicity Analysis Scipts
