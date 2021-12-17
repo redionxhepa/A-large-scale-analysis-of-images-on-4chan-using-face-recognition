@@ -139,3 +139,8 @@ The difference of the annotation scripts in terms of input parameters is that ma
 a text file containing the labels of the that particular image. "imagePath" parameter is the path of that image. "wikiEncodings" are the encodings of the truth data which was constructed using the WikiData knowledge base. "imagesEncodings" is contains the encodings of the images. Please that the order matters because there is one-to-one mapping between "labels", "imagesPath", and "imagesEncodings".
 
 
+
+## Miscallaneous scripts
+
+The below scripts are used mainly for calculating the md5 hashes, finetuning the Human Face vs Cartoon classifier or create the statistics of the clusters.
+
