@@ -125,5 +125,15 @@ For the visualization script one needs three parameters. At first the output fil
 
 ## Annotation
 
+For the annotation we have two different scripts. THe first one is medoid based and the other one is majority based annotation. 
+
+```
+python visualize.py  --output --labels --imagesPath
+```
+
+```
+python visualize.py  --output --labels --imagesPath
+```
+
 
 
