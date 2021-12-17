@@ -142,5 +142,27 @@ a text file containing the labels of the that particular image. "imagePath" para
 
 ## Miscallaneous scripts
 
-The below scripts are used mainly for calculating the md5 hashes, finetuning the Human Face vs Cartoon classifier or create the statistics of the clusters.
+The below scripts are used mainly for calculating the md5 hashes, finetuning the Human Face vs Cartoon classifier or create the statistics of the clusters. The following new libraries are also needed.
+
+
+cycler==0.10.0
+joblib==1.1.0
+kiwisolver==1.3.2
+matplotlib==3.4.3
+numpy==1.21.3
+pandas==1.3.4
+Pillow==8.4.0
+pkg-resources==0.0.0
+pyparsing==3.0.0
+python-dateutil==2.8.2
+pytz==2021.3
+scikit-learn==1.0.1
+scipy==1.7.1
+six==1.16.0
+sklearn==0.0
+threadpoolctl==3.0.0
+torch==1.10.0
+torchvision==0.11.1
+tqdm==4.62.3
+typing-extensions==3.10.0.2
 
