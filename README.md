@@ -1,5 +1,19 @@
 # A large-scale analysis of images on 4chan using face recognition
 
+
+
+
+
+##Pipeline overview
+
+
+![Alt text](https://github.com/redionxhepa/A-large-scale-analysis-of-images-on-4chan-using-face-recognition/blob/main/pipeline_afterFeedback.jpeg?raw=true "Pipeline")
+
+
+
+
+
+
 ### Dependencies and libriaries to be installed
 
 The following libraries were used to perform the experiments. The versions do not have to be exactly but we are showing them to be consistent.
