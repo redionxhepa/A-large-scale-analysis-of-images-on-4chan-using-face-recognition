@@ -4,12 +4,21 @@
 
 
 
-##Pipeline overview
+## Pipeline overview
 
 
-<a href="url"><img src="https://github.com/redionxhepa/A-large-scale-analysis-of-images-on-4chan-using-face-recognition/blob/main/pipeline_afterFeedback.jpeg?raw=true " align="left" height="48" width="48" ></a>
+<a href="url"><img src="https://github.com/redionxhepa/A-large-scale-analysis-of-images-on-4chan-using-face-recognition/blob/main/pipeline_afterFeedback.jpeg?raw=true " align="center" height="412" width="412" ></a>
 
 
+The annotation process
+
+
+
+<a href="url"><img src="https://github.com/redionxhepa/A-large-scale-analysis-of-images-on-4chan-using-face-recognition/blob/main/Annotation Process_after feedback.jpeg?raw=true " align="center" height="412" width="412" ></a>
+
+A sample cluster is shown below.
+
+<a href="url"><img src="https://github.com/redionxhepa/A-large-scale-analysis-of-images-on-4chan-using-face-recognition/blob/main/DonaldTrumpTweets.png?raw=true " align="center" height="212" width="212" ></a>
 
 
 
