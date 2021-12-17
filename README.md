@@ -123,6 +123,15 @@ python visualize.py  --output --labels --imagesPath
 ```
 For the visualization script one needs three parameters. At first the output files directory needs to be given. Labels of each image and the relevant image paths are also needed. In this way for each cluster one would have a particular pdf.
 
+
+## WikiData Encodings
+
+
+```
+python featureExtractorChanged_WikiData.py --output --labels --imagesPath
+```
+This script is adjusted for finding the encodings in the WikiData images.
+
 ## Annotation
 
 For the annotation we have two different scripts. THe first one is medoid based and the other one is majority based annotation. 
@@ -201,4 +210,28 @@ python cartoonClassifiersStatistics.py
 
 ## Cluster statistics 
 
+For the obtained clusters we can perform some statistics on the size and distribution of each annotated person. The following scripts would be helpful.
+
+```
+python  clustersAnalysis_seminar.py
+```
+
+```
+python   lookforCluster.py
+```
+
+
+
 ## Toxicity Analysis Scipts
+
+For the toxicity analysis we need the md5-s of the images and the relevant posts. 
+
+
+
+```
+python   md5HashCalulcator.py
+```
+
+```
+python   checkWhichPeopleHaveToxicityText.py
+```
