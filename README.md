@@ -128,11 +128,11 @@ For the visualization script one needs three parameters. At first the output fil
 For the annotation we have two different scripts. THe first one is medoid based and the other one is majority based annotation. 
 
 ```
-python visualize.py  --output --labels --imagesPath
+python annotation_majority_based.py  --labels  --imagesPath --wikiEncodings --imagesEncodings --tolerance --trials
 ```
 
 ```
-python visualize.py  --output --labels --imagesPath
+python annotation_medoid_based.py --labels  --imagesPath --wikiEncodings --imagesEncodings --tolerance 
 ```
 
 
