@@ -121,7 +121,7 @@ python  dbScan.py --inputPath onePersonImagesEncoding.npy --outputFolder /home/r
 ```
 python visualize.py  --output --labels --imagesPath
 ```
-Explanations to be added for each parameter.
+For the visualization script one needs three parameters. At first the output files directory needs to be given. Labels of each image and the relevant image paths are also needed. In this way for each cluster one would have a particular pdf.
 
 ## Annotation
 
