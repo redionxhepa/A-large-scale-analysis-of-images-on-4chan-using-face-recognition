@@ -1,17 +1,25 @@
 # A large-scale analysis of images on 4chan using face recognition
 
 
-
+We make a large scale analysis of the images on 4chan web community. We focus on detecting famous people in this imagery and try to get insight on how these images are spread into toxic posts. We also make a temporal analysis of the spread of these images. We make use of 5 million images from the period 2016-2018 and the posts from 2016-2019.
 
 
 ## Pipeline overview
 
+The approach is simple. We try to compile a list of famous people using the posts. We go through the posts and check for the "Person" named entities. The dataset we are using has both the named entites, the md5-s of the images present in the post and the high toxicity scores for every post. Please refer to these two papers to get a better understanding of the datasets.
+
+
+From the first paper we get the posts.
+<https://arxiv.org/pdf/2001.07487.pdf>  <br/>
+
+From the second paper we get the relevant images.
+<https://arxiv.org/abs/1809.01644> <br/>
 
 <a href="url"><img src="https://github.com/redionxhepa/A-large-scale-analysis-of-images-on-4chan-using-face-recognition/blob/main/pipeline_afterFeedback.jpeg?raw=true " align="center" height="412" width="412" ></a>
 
 
-The annotation process
 
+ After having compiled the list of candidate famous people ,we crawl the images for those names from WikiData.
 
 
 <a href="url"><img src="https://github.com/redionxhepa/A-large-scale-analysis-of-images-on-4chan-using-face-recognition/blob/main/Annotation Process_after feedback.jpeg?raw=true " align="center" height="412" width="412" ></a>
