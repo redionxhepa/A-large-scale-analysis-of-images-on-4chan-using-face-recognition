@@ -145,24 +145,23 @@ a text file containing the labels of the that particular image. "imagePath" para
 The below scripts are used mainly for calculating the md5 hashes, finetuning the Human Face vs Cartoon classifier or create the statistics of the clusters. The following new libraries are also needed.
 
 
-cycler==0.10.0
-joblib==1.1.0
-kiwisolver==1.3.2
-matplotlib==3.4.3
-numpy==1.21.3
-pandas==1.3.4
-Pillow==8.4.0
-pkg-resources==0.0.0
-pyparsing==3.0.0
-python-dateutil==2.8.2
-pytz==2021.3
-scikit-learn==1.0.1
-scipy==1.7.1
-six==1.16.0
-sklearn==0.0
-threadpoolctl==3.0.0
-torch==1.10.0
-torchvision==0.11.1
-tqdm==4.62.3
-typing-extensions==3.10.0.2
-
+cycler==0.10.0 <br/>
+joblib==1.1.0 <br/> 
+kiwisolver==1.3.2 <br/>
+matplotlib==3.4.3 <br/>
+numpy==1.21.3 <br/>
+pandas==1.3.4 <br/>
+Pillow==8.4.0 <br/>
+pkg-resources==0.0.0 <br/>
+pyparsing==3.0.0 <br/> 
+python-dateutil==2.8.2 <br/>
+pytz==2021.3 <br/>
+scikit-learn==1.0.1 <br/>
+scipy==1.7.1 <br/>
+six==1.16.0 <br/>
+sklearn==0.0 <br/>
+threadpoolctl==3.0.0 <br/>
+torch==1.10.0 <br/>
+torchvision==0.11.1 <br/>
+tqdm==4.62.3 <br/>
+typing-extensions==3.10.0.2 <br/>
