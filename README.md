@@ -173,8 +173,8 @@ typing-extensions==3.10.0.2 <br/>
 To train the  Human Face vs Cartoon Classifier classifier we have used the following approach. First we get 10 thousand images from CelebA dataset for human faces and 10 thousand cartoon images from iCartoon dataset.
 
 The links for the datasets are given.
-<http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html>
-<https://github.com/luxiangju-PersonAI/iCartoonFace>
+<http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html> <br/>
+<https://github.com/luxiangju-PersonAI/iCartoonFace> <br/>
 
 First we create the relevant train and test dataset. This is done by the following script :
 
