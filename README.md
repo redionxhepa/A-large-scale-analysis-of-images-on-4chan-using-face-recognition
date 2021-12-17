@@ -135,5 +135,7 @@ python annotation_majority_based.py  --labels  --imagesPath --wikiEncodings --im
 python annotation_medoid_based.py --labels  --imagesPath --wikiEncodings --imagesEncodings --tolerance 
 ```
 
+The difference of the annotation scripts in terms of input parameters is that majority based one has an extra "trials" parameters. "labels" parameter requires
+a text file containing the labels of the that particular image. "imagePath" parameter is the path of that image. "wikiEncodings" are the encodings of the truth data which was constructed using the WikiData knowledge base. "imagesEncodings" is contains the encodings of the images. Please that the order matters because there is one-to-one mapping between "labels", "imagesPath", and "imagesEncodings".
 
 
