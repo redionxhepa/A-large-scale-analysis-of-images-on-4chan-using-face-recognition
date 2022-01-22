@@ -88,7 +88,7 @@ The first part of the pipeline consists in compiling the candidate list of (famo
 ```
 python readTheEntities.py --input --output
 ```
-The input if the dataset path and the output is the file where you want to save the compiled list of names.
+The input is the dataset path and the output is the file where you want to save the compiled list of names.
 
 
 
