@@ -1,7 +1,7 @@
 # A large-scale analysis of images on 4chan using face recognition
 
 
-We make a large scale analysis of the images on 4chan web community. We focus on detecting famous people in this imagery and try to get insight on how these images are spread into toxic posts. We also make a temporal analysis of the spread of these images. We make use of 5 million images from the period 2016-2018 and the posts from 2016-2019.
+We make a large scale analysis of the images on 4chan web community. We focus on detecting famous people in this imagery and try to get insight on how these images are spread into toxic posts. We also make a temporal analysis of the spread of these images. We make use of 5 million images from the period 2016-2018 and the posts from 2016-2019. To properly understand what each script does one might need to read my master thesis. I will try to give a deanonymized version of it soon.
 
 
 ## Pipeline overview
