@@ -83,12 +83,12 @@ Wikidata==0.7.0 <br/>
 
 
 ## Read the entities
-
+The first part of the pipeline consists in compiling the candidate list of (famous) people that are being mentioned in the posts (posts which have texts). The data is obtained using the dataset mentioned in the first paper above ( Papasavva et al).
 
 ```
 python readTheEntities.py --input --output
 ```
-In the scripts the explanations are added for each parameter.
+The input if the dataset path and the output is the file where you want to save the compiled list of names.
 
 
 
